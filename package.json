@@ -1,0 +1,26 @@
+{
+  "name": "myblockchain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node_1": "nodemon --watch dev -e js dev/networkNode.js 3000 http://localhost:3000",
+    "node_2": "nodemon --watch dev -e js dev/networkNode.js 4000 http://localhost:4000",
+    "node_3": "nodemon --watch dev -e js dev/networkNode.js 5000 http://localhost:5000",
+    "node_4": "nodemon --watch dev -e js dev/networkNode.js 7000 http://localhost:7000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "eosjs-ecc": "^4.0.7",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sha256": "^0.2.0",
+    "uuid": "^9.0.0"
+  }
+}
